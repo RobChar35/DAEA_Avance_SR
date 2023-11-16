@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="catsvsdogs">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manhattan pearson</title>
+  <base href="/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <meta name="keywords" content="docker-compose, docker, stack">
+  <meta name="author" content="Docker">
+</head>
+
+<body ng-controller="statsCtrl">
+  <div id="content-container">
+    <div id="content-container-center">
+      <div id="distances">
+        <div class="distance">
+          <div class="label">Distancia Manhattan:</div>
+          <div class="value">{{distanciaManhattan}}</div>
+        </div>
+        <div class="distance">
+          <div class="label">Distancia Pearson:</div>
+          <div class="value">{{distanciaPerson}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="socket.io.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
